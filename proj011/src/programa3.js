@@ -17,3 +17,12 @@ https://www.w3schools.com/jsref/jsref_operators.asp
 	para saber se a idade é maior ou igual a 18. E mostra true em um alert caso o 
 	usuário seja maior de idade.
 *******************************************************************************/
+let idade = prompt("Please, enter your age: ");
+
+let maiorIdade = idade;
+
+if (maiorIdade => 18) {
+  maiorIdade = true;
+}
+
+alert(maiorIdade);
