@@ -6,11 +6,13 @@
 		"Temperatura positiva"
 *******************************************************************************/
 
+function termostato(temperatura) {
+  if (temperatura < 0) {
+    return "Temperatura negativa";
+  }
 
-
-
-
-
+  return "Temperatura positiva";
+}
 
 /*******************************************************************************
 	Tarefa 2:
@@ -21,11 +23,17 @@
 		aprovação é 60%.
 *******************************************************************************/
 
+function boletimEscolar(nota) {
+  if (nota < 0 || nota > 10) {
+    return "Nota inválida";
+  }
 
+  if (nota < 6) {
+    return "Reprovado";
+  }
 
-
-
-
+  return "Aprovado";
+}
 
 /*******************************************************************************
 	Tarefa 3:
@@ -38,11 +46,15 @@
 		- Outros -> 35,90
 *******************************************************************************/
 
-
-
-
-
-
+function calcularFrete(estado) {
+  if (estado === "MG") {
+    return 12.5;
+  } else if (estado === "SP") {
+    return 23.9;
+  } else if (estado === "RJ") {
+    return 18.2;
+  } else return 35.9;
+}
 
 /*******************************************************************************
 	Tarefa 4:
@@ -53,11 +65,13 @@
 		- mais de um 1,85 -> "joga basquete?"
 *******************************************************************************/
 
-
-
-
-
-
+function calcularAltura(altura) {
+  if (altura < 1.6) {
+    return "baixinho";
+  } else if (altura <= 1.85) {
+    return "altura normal";
+  } else return "joga basquete?";
+}
 
 /*******************************************************************************
 	Tarefa 5:
@@ -65,3 +79,9 @@
 		retorna a mensagem "Login efetuado com sucesso", senão, retorna a mensagem
 		"Senha inválida".
 *******************************************************************************/
+
+function validarSenha(senha) {
+  if (senha == 123456) {
+    return "Login efetuado com sucesso";
+  } else return "Senha inválida";
+}
